@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 演示商品占位图 3：台灯 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#FFF8E1"
+        android:pathData="M0,0h200v200h-200z" />
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M70,50l60,0l-20,50l-20,0z" />
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M94,100h12v55h-12z" />
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M65,155h70v10h-70z" />
+</vector>

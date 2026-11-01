@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 演示商品占位图 8：衣服 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#FCE4EC"
+        android:pathData="M0,0h200v200h-200z" />
+    <path
+        android:fillColor="#D81B60"
+        android:pathData="M75,60h50l15,35l-20,8l-5,47h-30l-5,-47l-20,-8z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M92,60h16v20h-16z" />
+</vector>

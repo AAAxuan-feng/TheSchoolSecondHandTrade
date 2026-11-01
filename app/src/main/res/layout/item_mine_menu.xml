@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  item_mine_menu.xml —— 个人中心里"我发布的/我买到的/我卖出的"菜单行
+  路径：app/src/main/res/layout/item_mine_menu.xml
+  ★ 这个文件会被 activity_mine.xml 用 <include> 引用三次，
+    Java 里通过 include 的 id 找到它，再找里面的 tvMenuTitle：
+      View row = findViewById(R.id.layoutMyPublish);
+      TextView tv = row.findViewById(R.id.tvMenuTitle);
+      tv.setText("我发布的商品");
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <ImageView
+        android:id="@+id/ivMenuIcon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="图标"
+        android:src="@android:drawable/ic_menu_agenda"
+        app:tint="@color/primary" />
+
+    <TextView
+        android:id="@+id/tvMenuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@id/ivMenuIcon"
+        android:text="菜单项"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvMenuArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="›"
+        android:textColor="@color/text_hint"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</RelativeLayout>

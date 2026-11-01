@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 演示商品占位图 5：耳机 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#EDE7F6"
+        android:pathData="M0,0h200v200h-200z" />
+    <path
+        android:fillColor="#5E35B1"
+        android:pathData="M60,60h80v18h-80z" />
+    <path
+        android:fillColor="#5E35B1"
+        android:pathData="M55,75h18v55h-18z M127,75h18v55h-18z" />
+    <path
+        android:fillColor="#9575CD"
+        android:pathData="M50,125h28v34h-28z M122,125h28v34h-28z" />
+</vector>

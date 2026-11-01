@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 演示商品占位图 6：水杯 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M0,0h200v200h-200z" />
+    <path
+        android:fillColor="#43A047"
+        android:pathData="M72,60h56v90h-56z" />
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M72,55h56v12h-56z" />
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M84,80h12v50h-12z" />
+</vector>

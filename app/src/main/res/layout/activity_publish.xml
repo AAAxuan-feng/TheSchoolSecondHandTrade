@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  activity_publish.xml —— 发布商品页
+  路径：app/src/main/res/layout/activity_publish.xml
+  控件 id：tvBack / ivGoodsImg / tvPickImage / etGoodsName / etGoodsPrice / etGoodsDesc / btnSubmit
+  注意：页面根布局用 ScrollView，键盘弹出时不会被顶坏
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page"
+    android:orientation="vertical">
+
+    <!-- ================= 标题栏 ================= -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/primary">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="← 返回"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/publish_title"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ============ 选择图片区域 ============ -->
+            <LinearLayout
+                android:id="@+id/layoutPickImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/ivGoodsImg"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/bg_img_picker"
+                    android:contentDescription="商品图片"
+                    android:padding="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+                <TextView
+                    android:id="@+id/tvPickImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/pick_image"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_body" />
+            </LinearLayout>
+
+            <!-- ============ 商品名称 ============ -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/LoginTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/hint_goods_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGoodsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- ============ 价格 ============ -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/LoginTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_goods_price">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGoodsPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- ============ 商品描述（多行） ============ -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/LoginTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_goods_desc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGoodsDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:maxLines="6"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- ============ 商品分类（单选 chip，Java 里动态生成） ============ -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="@string/hint_choose_category"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_small" />
+
+            <!--
+              用 LinearLayout 装 chip，Java 里根据 GoodsBean.CATEGORIES 生成按钮。
+              为什么不用 RadioGroup？因为分类有 5 个、一排放不下，需要用两行；
+              而 RadioGroup 只保证"直接子控件"互斥，分两行就会变成两个独立分组，
+              可以各选一个。用 chip + 单个"当前选中分类"变量更简单可靠。
+            -->
+            <LinearLayout
+                android:id="@+id/layoutCategoryPick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" />
+
+            <!-- ============ 发布按钮 ============ -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmit"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/btn_submit_publish" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

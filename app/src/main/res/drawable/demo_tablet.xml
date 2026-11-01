@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 演示商品占位图 2：平板 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M0,0h200v200h-200z" />
+    <path
+        android:fillColor="#2EC4B6"
+        android:pathData="M40,55h120v90h-120z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,63h104v74h-104z" />
+    <path
+        android:fillColor="#2EC4B6"
+        android:pathData="M90,150h20v6h-20z" />
+</vector>

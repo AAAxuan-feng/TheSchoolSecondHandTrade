@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  strings.xml —— 直接整体覆盖 app/src/main/res/values/strings.xml
+  （全选 → 删除 → 粘贴本文件全部内容，不要在原内容后面追加）
+-->
+<resources>
+    <string name="app_name">校园二手交易</string>
+
+    <!-- 登录 / 注册 -->
+    <string name="login_title">校园二手交易</string>
+    <string name="login_subtitle">让闲置流动起来</string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="hint_password_confirm">请再次输入密码</string>
+    <string name="btn_login">登 录</string>
+    <string name="btn_register">注 册</string>
+    <string name="go_register">还没有账号？立即注册</string>
+    <string name="go_login">已有账号？返回登录</string>
+    <string name="login_test_account">测试账号：test　密码：123456</string>
+    <string name="btn_exit_app">退出程序</string>
+
+    <!-- 首页 -->
+    <string name="home_title">校园二手市场</string>
+    <string name="search_hint">搜索商品名称</string>
+    <string name="btn_search">搜索</string>
+    <string name="btn_publish">发布闲置</string>
+    <string name="empty_goods">还没有商品，快去发布第一件闲置吧～</string>
+    <string name="empty_list">这里暂时没有商品</string>
+
+    <!-- 分类 -->
+    <string name="category_all">全部</string>
+    <string name="category_book">书籍</string>
+    <string name="category_digital">数码</string>
+    <string name="category_life">生活用品</string>
+    <string name="category_sport">运动</string>
+    <string name="category_other">其他</string>
+    <string name="label_category">分类</string>
+    <string name="hint_choose_category">请选择商品分类</string>
+
+    <!-- 发布 -->
+    <string name="publish_title">发布闲置</string>
+    <string name="hint_goods_name">商品名称（如：九成新高等数学教材）</string>
+    <string name="hint_goods_price">价格（元）</string>
+    <string name="hint_goods_desc">商品描述（成色、新旧程度、交易地点…）</string>
+    <string name="pick_image">点击选择商品图片</string>
+    <string name="btn_submit_publish">立即发布</string>
+
+    <!-- 详情 -->
+    <string name="detail_title">商品详情</string>
+    <string name="label_seller">卖家：</string>
+    <string name="label_desc">商品描述</string>
+    <string name="btn_contact_seller">联系卖家</string>
+    <string name="btn_buy_now">立即购买</string>
+
+    <!-- 个人中心 -->
+    <string name="mine_title">个人中心</string>
+    <string name="mine_publish">我发布的商品</string>
+    <string name="mine_buy">我买到的商品</string>
+    <string name="mine_sell">我卖出的商品</string>
+    <string name="btn_logout">退出登录</string>
+    <string name="logout_confirm">确定要退出登录吗？</string>
+    <string name="logout_success">已退出登录</string>
+
+    <string name="title_my_publish">我发布的商品</string>
+    <string name="title_my_buy">我买到的商品</string>
+    <string name="title_my_sell">我卖出的商品</string>
+
+    <!-- 通用 -->
+    <string name="btn_back">返回</string>
+</resources>

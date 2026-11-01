@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 演示商品占位图 7：自行车 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#E0F7FA"
+        android:pathData="M0,0h200v200h-200z" />
+    <path
+        android:fillColor="#00838F"
+        android:pathData="M100,60l-40,60h80z" />
+    <path
+        android:fillColor="#00838F"
+        android:pathData="M60,120a22,22 0,1 0,0 44a22,22 0,1 0,0 -44z M140,120a22,22 0,1 0,0 44a22,22 0,1 0,0 -44z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,130a12,12 0,1 0,0 24a12,12 0,1 0,0 -24z M140,130a12,12 0,1 0,0 24a12,12 0,1 0,0 -24z" />
+</vector>

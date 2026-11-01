@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 橙色圆角按钮背景（不想用 MaterialButton 时可以套在普通 Button 上）
+     app/src/main/res/drawable/bg_btn_primary.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/primary" />
+    <corners android:radius="24dp" />
+</shape>

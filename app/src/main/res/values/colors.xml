@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  colors.xml —— 整体替换或合并进你项目 app/src/main/res/values/colors.xml
+  主题色用校园二手交易比较合适的橙色系
+-->
+<resources>
+    <!-- 品牌主色（橙色，二手交易App常用暖色调） -->
+    <color name="primary">#FF6B35</color>
+    <color name="primary_dark">#E8551F</color>
+    <color name="primary_light">#FFE3D6</color>
+
+    <!-- 辅助色 -->
+    <color name="accent">#2EC4B6</color>
+    <color name="price_red">#FF3B30</color>
+
+    <!-- 文本 -->
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#888888</color>
+    <color name="text_hint">#BBBBBB</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- 背景 & 分割线 -->
+    <color name="bg_page">#F5F5F7</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="divider">#EEEEEE</color>
+
+    <!-- 状态标签 -->
+    <color name="status_on_sale">#2EC4B6</color>
+    <color name="status_sold">#999999</color>
+
+    <!-- 图片占位背景 -->
+    <color name="img_placeholder">#EDEDED</color>
+</resources>

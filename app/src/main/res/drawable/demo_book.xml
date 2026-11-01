@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 演示商品占位图 1：书本 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#FFF3E0"
+        android:pathData="M0,0h200v200h-200z" />
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M50,60h100v80h-100z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M58,68h84v6h-84z M58,82h84v4h-84z M58,92h70v4h-70z" />
+    <path
+        android:fillColor="#E8551F"
+        android:pathData="M50,60h10v80h-10z" />
+</vector>

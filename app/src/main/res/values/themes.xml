@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  themes.xml —— 位置 app/src/main/res/values/themes.xml
+  ★ 更稳的做法（推荐新手）：
+     不要整体替换，只把你现有 themes.xml 里 <style> 标签内部的这几行加进去：
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowBackground">@color/bg_page</item>
+     主题名字沿用你项目里已经有的那个（截图里是 Theme.TheSchoolSecondHandTrade）。
+     下面给的是「完整可替换版」，主题名与你项目一致，可以直接覆盖。
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.TheSchoolSecondHandTrade" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 主色 -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- 状态栏 / 背景 -->
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowBackground">@color/bg_page</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <!-- ========== 登录/注册输入框统一样式（可选，用了更整洁） ========== -->
+    <style name="LoginTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/primary</item>
+        <item name="android:layout_marginTop">14dp</item>
+    </style>
+
+    <!-- ========== 主按钮样式 ========== -->
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <!-- ========== 页面通用顶部标题栏 ========== -->
+    <style name="PageTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
